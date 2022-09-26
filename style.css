@@ -239,12 +239,13 @@ p {
 }
 
 .school__logo{
-  width: 120px;
-  margin-right: 20px;
+  width: 50px;
+  margin-right: 10px;
+  margin-bottom: 5px;
 }
 
 .school__description{
-  margin: 0 16px;
+  margin: 0 16px ;
   text-align: left;
 }
 
@@ -267,9 +268,9 @@ p {
 }
 
 .certificate__logo {
-  width: 90px;
-  margin-right: 65px;
-  margin-top: 10px;
+  width: 55px;
+  margin-right: 20px;
+  margin-top: 5px;
 }
 
 .certificate__description {
