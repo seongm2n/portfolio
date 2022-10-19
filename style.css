@@ -122,15 +122,21 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
   font-family: '양진체';
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-kaki);
+  background-color: transparent;
   align-items: center;
-  color: var(--color-sand);
   padding: 16px;
+  transition: all var(--animation-duration) ease-in-out;
 }
 
+#navbar.navbar--dark {
+  background-color: var(--color-kaki);
+  padding: 8px;
+}
 
 .navbar__menu {
   display: flex;
@@ -140,7 +146,6 @@ p {
   display: flex;
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
-  
 }
 
 .navbar__logo img{
@@ -155,6 +160,7 @@ p {
   margin:  0 4px;
   cursor: pointer;
   border-radius: var(--size-border-radius);
+  color: var(--color-sand);
 }
 
 .navbar__menu__item.active {
@@ -165,10 +171,20 @@ p {
   background-color: var(--color-dark-sand);
 }
 
+.navbar__toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--color-sand);
+  display: none;
+}
+
 /* Home */
 #home{
   background: url("imgs/home-background2.jpeg") center/cover no-repeat;
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 
@@ -357,9 +373,8 @@ p {
 
 .services__content{
   position: relative;
-  background-color: var(--container-color);
   padding: 3.5rem .5rem 1.25rem 1.5rem;
-  border-radius: .25rem;
+  border-radius: var(--size-border-radius);
   box-shadow: 0 2px 4px rgba(0,0,0,.15);
   transition: .3s;
 }
@@ -371,12 +386,12 @@ p {
 .services__icon{
   display: block;
   font-size: 1.5rem;
-  color: var(--first-color);
+  color: var(--color-beige);
   margin-bottom: var(--mb-1);
 }
 
 .services__title{
-  font-size: var(--h3-font-size);
+  font-size: var(--font-regular);
   margin-bottom: var(--mb-1);
   font-weight: var(--font-medium);
 }
@@ -409,7 +424,7 @@ p {
 
 .services__modal-content{
   position: relative;
-  background-color: var(--container-color);
+  background-color: var(--color-beige);
   padding: 1.5rem;
   border-radius: .5rem;
 }
@@ -433,12 +448,12 @@ p {
   top: 1rem;
   right: 1rem;
   font-size: 1.5rem;
-  color: var(--first-color);
+  color: var(--color-beige);
   cursor: pointer;
 }
 
 .services__modal-icon{
-  color: var(--first-color);
+  color: var(--color-beige);
   margin-right: var(--mb-0-25);
 }
 
@@ -612,4 +627,21 @@ p {
 .contact__links i:hover {
   transform: scale(1.1);
   color: var(--color-orange);
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
 }
