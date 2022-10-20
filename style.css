@@ -160,21 +160,24 @@ p {
   padding: 8px 12px;
   margin:  0 4px;
   cursor: pointer;
+  border: 1px solid transparent;
   border-radius: var(--size-border-radius);
   color: var(--color-sand);
 }
 
-.navbar__menu__item.active {
+.navbar__menu__item {
   border: 1px solid var(--color-sand);
 }
 
 .navbar__menu__item:hover {
+  border-color: var(--color-sand);
   background-color: var(--color-dark-sand);
+  
 }
 
 .navbar__toggle-btn {
   position: absolute;
-  top: 24px;
+  top: 18px;
   right: 32px;
   font-size: 24px;
   color: var(--color-sand);
@@ -474,6 +477,7 @@ p {
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
   padding: 8px 48px;
+  margin-top: 3px;
 }
 
 .category__btn.active,
@@ -507,6 +511,13 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 1;
+  transition: all var(--animation-duration) ease-out;
+}
+
+.work__projects.anim-out {
+  opacity: 0;
+  transform: scale(0.9) translateY(40px); 
 }
 
 .project {
@@ -518,6 +529,10 @@ p {
   height: 250px;
   margin: 4px;
   background-color: var(--color-light-white);
+}
+
+.project.invisible {
+  display: none;
 }
 
 .project__img {
