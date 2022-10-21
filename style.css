@@ -35,11 +35,11 @@
   
 
   /* Font Size */
-  --font-large: 48px;
-  --font-medium: 28px;
-  --font-regular: 18px;
-  --font-small: 16px;
-  --font-micro: 14px;
+  --font-large: 50px;
+  --font-medium: 30px;
+  --font-regular: 20px;
+  --font-small: 18px;
+  --font-micro: 16px;
   
   
 
@@ -167,6 +167,7 @@ p {
   border: 1px solid transparent;
   border-radius: var(--size-border-radius);
   color: var(--color-sand);
+  text-shadow: -1.5px 0 var(--color-kaki), 0 1.5px var(--color-kaki), 1.5px 0 var(--color-kaki), 0 -1.5px var(--color-kaki);
 }
 
 .navbar__menu__item:hover {
@@ -186,6 +187,7 @@ p {
 
 /* Home */
 #home{
+  font-family: 'GangwonEdu_OTFBoldA';
   background: url("imgs/home-background2.jpeg") center/cover no-repeat;
   padding: 40px;
   padding-top: 120px;
@@ -224,6 +226,7 @@ p {
 }
 
 .section__container {
+  font-family: 'GangwonEdu_OTFBoldA';
   max-width: 1200px;
   margin: auto;
 }
@@ -324,6 +327,7 @@ p {
 
 /* Skill */
 #skills {
+  font-family: 'GangwonEdu_OTFBoldA';
   background-color: var(--color-ivory);
 }
 .skillset {
@@ -473,10 +477,12 @@ p {
 }
 
 .work__categories{
+  
   margin: 40px;
 
 }
 .category__btn {
+  font-family: 'GangwonEdu_OTFBoldA';
   border: 1px solid var(--color-dark-white);
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
@@ -584,6 +590,7 @@ p {
 
 /* Testimonial */
 /* #testimonials {
+  font-family: 'GangwonEdu_OTFBoldA';
   background-color: var(--color-light-white);
 }
 
@@ -626,6 +633,7 @@ p {
 
 /* Contact */
 #contact {
+  font-family: 'GangwonEdu_OTFBoldA';
   background-color: var(--color-kaki);
 }
 
@@ -677,11 +685,11 @@ p {
 @media screen and (max-width: 768px) {
   :root {
     /* Font Size */
-  --font-large: 30px;
-  --font-medium: 18px;
-  --font-regular: 16px;
-  --font-small: 14px;
-  --font-micro: 12px;
+  --font-large: 32px;
+  --font-medium: 20px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
   }
 
   .navbar__toggle-btn {
