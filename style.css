@@ -73,7 +73,6 @@ body {
 a {
   text-decoration: none;
   color: var(--color-sand);
-  text-shadow: -1.5px 0 var(--color-kaki), 0 1.5px var(--color-kaki), 1.5px 0 var(--color-kaki), 0 -1.5px var(--color-kaki);
 }
 
 ul {
@@ -157,6 +156,9 @@ p {
   height: var(--logo-size);
 }
 
+.navbar__logo a {
+  text-shadow: -1.5px 0 var(--color-kaki), 0 1.5px var(--color-kaki), 1.5px 0 var(--color-kaki), 0 -1.5px var(--color-kaki);
+}
 
 .navbar__menu__item {
   padding: 8px 12px;
