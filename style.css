@@ -73,6 +73,7 @@ body {
 a {
   text-decoration: none;
   color: var(--color-sand);
+  text-shadow: -1.5px 0 var(--color-kaki), 0 1.5px var(--color-kaki), 1.5px 0 var(--color-kaki), 0 -1.5px var(--color-kaki);
 }
 
 ul {
@@ -703,6 +704,7 @@ p {
   }
   .navbar__logo a {
     margin: auto;
+    color: var(--color-sand);
   }
 
   .navbar__menu {
