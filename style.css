@@ -57,6 +57,19 @@
 
 }
 
+/*==================== LAYOUT ====================*/
+.container{
+  max-width: 789px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
 
 
 /* Universal tags */
@@ -221,6 +234,7 @@ p {
 /* Section common */
 .section {
   padding: 50px;
+  padding-top: 70px;
   text-align: center;
   margin: auto;
 }
@@ -378,38 +392,47 @@ p {
 }
 
 /*==================== SERVICES ====================*/
+#services {
+  font-family: 'GangwonEdu_OTFBoldA';
+}
+
+.services__container{
+  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .services__content{
   position: relative;
   padding: 56px 24px 20px 24px;
   border-radius: var(--size-border-radius);
-  box-shadow: 0 2px 4px rgba(0,0,0,.15);
+  box-shadow: 0 2px 4px var(--color-dark-kaki);
   transition: .3s;
 }
 
 .services__content:hover{
-  box-shadow: 0 4px 8px rgba(0,0,0,.15);
+  box-shadow: 0 4px 8px var(--color-dark-kaki);
 }
 
 .services__icon{
   display: block;
-  font-size: 20px;
+  font-size: var(--font-regular);
   color: var(--color-dark-kaki);
-  margin-bottom: var(--mb-1);
+  margin-bottom: 2px;
 }
 
 .services__title{
   font-size: var(--font-regular);
-  margin-bottom: var(--mb-1);
+  margin-bottom: 2px;
   font-weight: var(--font-medium);
 }
 
 .services__button{
   cursor: pointer;
-  font-size: var(--small-font-size);
+  font-size: var(--font-micro);
 }
 
 .services__button:hover .button__icon{
-  transform: translateX(.25rem);
+  transform: translateX(7px);
 }
 
 .services__modal{
@@ -422,8 +445,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 1rem;
-  z-index: var(--z-modal);
+  padding: 0 16px;
+  z-index: 1000;
   opacity: 0;
   visibility: hidden;
   transition: .3s;
@@ -432,12 +455,12 @@ p {
 .services__modal-content{
   position: relative;
   background-color: var(--color-beige);
-  padding: 1.5rem;
-  border-radius: .5rem;
+  padding:24px;
+  border-radius: 8px;
 }
 
 .services__modal-services{
-  row-gap: 1rem;
+  row-gap: 16px;
 }
 
 .services__modal-service{
@@ -445,23 +468,24 @@ p {
 }
 
 .services__modal-title{
-  font-size: var(--h3-font-size);
+  font-size: var(--font-medium);
   font-weight: var(--font-medium);
-  margin-bottom: var(--mb-1-5);
+  margin-bottom: 24px;
 }
 
 .services__modal-close{
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 1.5rem;
-  color: var(--color-beige);
+  top: 16px;
+  right: 16px;
+  font-size: 24px;
+  color: var(--color-kaki);
   cursor: pointer;
 }
 
 .services__modal-icon{
-  color: var(--color-beige);
-  margin-right: var(--mb-0-25);
+  color: var(--color-kaki);
+  margin-right: 4px;
+  margin-top: 4px ;
 }
 
 /* Active Modal */
@@ -796,5 +820,34 @@ p {
     right: 16px;
     bottom: 16px;
   }
+
+}
+
+@media screen and (min-width: 768px){
+  .container{
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .services__container{
+      grid-template-columns: repeat(3, 218px);
+      justify-content: center;
+  }
+  .services__icon{
+      font-size: 2rem;
+  }
+  .sevices__content{
+      padding: 6rem 0 2rem 2.5rem;
+  }
+  .services__modal-content{
+      width: 450px;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px){
+  .services__container{
+      grid-template-columns: repeat(3, 238px);
+  }
+
 
 }
