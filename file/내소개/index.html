@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title> 20171343_신성민 </title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<style>
+		li{
+			list-style:none;}
+      #columns{
+        column-width:350px;
+        column-gap: 15px;
+      }
+      #columns figure{
+        display: inline-block;
+        border:1px solid rgba(0,0,0,0.2);
+        margin:0;
+        margin-bottom: 15px;
+        padding:10px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.5);;
+      }
+      #columns figure img{
+        width:100%;
+      }
+      #columns figure figcaption{
+        border-top:1px solid rgba(0,0,0,0.2);
+        padding:10px;
+        margin-top:11px;
+      }
+    </style>
+</head>
+
+<body>
+	<div data-theme="b">
+		<div data-role="page" id="home">
+			<div data-role="header" data-theme="b">
+				<h1> About me </h1>
+			</div>
+			<div data-role="content" style="text-align:center">
+				<img src="min.JPG" style="max-width: 100%; max-height:auto;" >
+				<ul data-role="listview" data-inset="true">
+					<li><a href="#intro">Profile</a></li>
+					<li><a href="#skill" >Skills</a></li>
+					<li><a href="#favoritethings1">Favorite Things</a></li>
+					<li><a href="#future">Future plan</a></li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				<h1>20171343_신성민</h1>
+			</div>
+		</div>
+
+
+		<div data-role="page" id="intro" data-theme="b">
+			<div data-role="header" data-theme="b">
+				<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+				<h1>Profile</h1>
+			</div>
+			<div data-role="content">
+				<div style="text-align:center">
+					<img src="memoticon.png" style="max-width: 100%; max-height:auto;" >
+				</div>
+				<div data-role="collapsible-set" data-theme="b" data-content-theme="a">
+					<div data-role="collapsible">
+						<h3>Native</h3>
+						<p>대한민국(Korea)</p>
+					</div>
+					<div data-role="collapsible">
+						<h3>Birth</h3>
+						<p>1995년 12월 29일</p>
+						<p>만 24세</p>
+						<p>염소자리</p>
+					</div>
+					<div data-role="collapsible" data-collapsed="false">
+						<h3>Detail</h3>
+						<p>성 명: 신성민</p>
+						<p>학 번: 20171343</p>
+						<p>학 년: 4학년</p>
+						<p>성 별: 여(female)</p>
+					</div>
+					<div data-role="collapsible">
+						<h3>Major</h3>
+						<p>주전공: 글로벌경영대학 동아시아물류학부 유통물류학과</p>
+						<p>부전공: IT공과대학 컴퓨터공학과</p>
+					</div>
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				<h1>20171343_신성민</h1>
+			</div>
+		</div>
+
+
+		<div data-role="page" id="skill" data-theme="b">
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<h1>Skills</h1>
+			</div>
+			<div data-role="main" class="ui-content">
+				<div class="ui-bar ui-bar-a" data-role="fieldcontain">
+					<label for="java">Java</label>
+					<input type="range" name="score" id="java" value="80" min="0" max="100"/><br/>
+					<label for="python">Python</label>
+					<input type="range" name="score" id="python" value="30" min="0" max="100"/><br/>
+					<label for="illust">Illustration</label>
+					<input type="range" name="score" id="illust" value="95" min="0" max="100"/><br/>
+					<label for="photoshop">Photoshop</label>
+					<input type="range" name="score" id="photoshop" value="97" min="0" max="100"/><br/>
+					<label for="cad">AutoCAD</label>
+					<input type="range" name="score" id="cad" value="99" min="0" max="100"/><br/>
+					<label for="sketch">SketchUp</label>
+					<input type="range" name="score" id="sketch" value="98" min="0" max="100"/><br/>
+					<label for="javascript">JavaScript</label>
+					<input type="range" name="score" id="javascript" value="50" min="0" max="100"/>
+				</div>
+			</div>
+			<div data-role="footer" data-theme="b" data-position="fixed">
+				<a href="#home" data-direction="reverse">이전</a>
+			</div>
+		</div>
+
+
+		<div data-role="page" data-dialog="true" id="favoritethings1">
+			<div data-role="header">
+				<h1>Favorite Food</h1>
+			</div>
+			<div data-role="main" class="ui-content">
+				<div class="ui-bar ui-bar-b">Bread</div>
+				<div class="ui-bar ui-bar-a">Croissant[크루아상]</div>
+				<img src="croissant.jpeg" alt="" width="100%">
+				<div class="ui-bar ui-bar-a">Scone[스콘]</div>
+				<img src="scone.jpeg" alt="" width="100%"><br/><br/>
+				<div class="ui-bar ui-bar-b">한식</div>
+				<div class="ui-bar ui-bar-a">떡볶이</div>
+				<img src="떡볶이.jpeg" alt="" width="100%">
+				<div class="ui-bar ui-bar-a">된장찌개</div>
+				<li><video controls width="100%" preload="metadata">
+					<source src="koreasoup.mp4" type="video/mp4">
+				</video></li>
+			</div>
+
+			<div data-role="footer">
+				<a href="#home" data-direction="reverse">이전</a>
+				<a href="#favoritethings2" data-transition="slide">다음</a>
+			</div>
+		</div>
+		<div data-role="page" data-dialog="true" id="favoritethings2">
+			<div data-role="header">
+				<h1>Favorite Music</h1>
+			</div>
+			<div data-role="main" class="ui-content">
+				<div class="ui-bar ui-bar-b">Mango</div>
+				<p>Singer: Elyar</p>
+				<p>genre: pop</p>
+				<video controls width="100%" preload="metadata">
+					<source src="mango.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div data-role="footer">
+			<a href="#favoritethings1" data-direction="reverse">이전</a>
+			<a href="#home">처음</a>
+		</div>
+	</div>
+
+
+	<div data-role="page" id="future" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b" >
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>Future Plan</h1>
+		</div>
+			<div id="columns">
+
+			<figure  class="ui-bar ui-bar-a">
+	        <img src="카카오인턴쉽.jpeg"/>
+	        <figcaption><i>카카오 Client 인턴쉽 지원</i><p>~5/6까지 지원</p><p>5/9 코딩테스트</p></figcaption>
+	     	</figure>
+
+	     	<figure  class="ui-bar ui-bar-a">
+	        <img src="토익시험.jpeg"/>
+	        <figcaption><i>Toeic시험</i><p>5월,6월</p></figcaption>
+	     	</figure>
+
+			<figure  class="ui-bar ui-bar-a">
+	        <img src="정처리.png"/>
+	        <figcaption><i>정보처리기사시험</i><p>6월,9월</p></figcaption>
+	     	</figure>
+
+	     	 <figure  class="ui-bar ui-bar-a">
+	        <img src="react.png"/>
+	        <figcaption><i>React공부</i><p>여름방학(7~8월)</p></figcaption>
+	     	</figure>
+
+			<figure  class="ui-bar ui-bar-a">
+	        <img src="jsp국비교육.jpg"/>
+	        <figcaption><i>JSP실무교육</i><p>겨울방학</p></figcaption>
+	     	</figure>
+
+    	</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>20171343_신성민</h1>
+		</div>
+	</div>
+	</div>
+
+</body>
+</html>
