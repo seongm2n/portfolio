@@ -437,8 +437,11 @@ img {
 }
 
 .skill__description {
-  font-size: var(--font-medium);
+  font-size: var(--font-xsmall);
+  text-align: justify;
+
 }
+
 
 .skill__data{
   position: relative;
@@ -711,6 +714,8 @@ img {
   margin: 24px 0;
   transition: all var(--animation-duration) ease-in;
 }
+
+
 
 .contact__links i:hover {
   transform: scale(1.1);
