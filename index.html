@@ -18,26 +18,28 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav id="navbar">
-      <div class="navbar__logo">
-        <img src="imgs/favicon2.png" alt="ㅅㅅㅁ's nav logo"/>
-        <a href="#">성민</a>
+    <header id="header">
+      <div class="topArea">
+        <div class="topContents">
+          <div class="navbar__logo">
+            <img class="navbar__logo__img "src="imgs/favicon2.png" alt="ㅅㅅㅁ's nav logo"/>
+            <h1 class="navbar__logo__title"><a href="#">성민</a></h1>
+          </div>
+            <ul class="navbar__menu">
+              <li class="navbar__menu__item active" data-link="#home">Home</li>
+              <li class="navbar__menu__item" data-link="#about">About</li>
+              <li class="navbar__menu__item" data-link="#skills">Skills</li>
+              <li class="navbar__menu__item" data-link="#work">My work</li>
+              <!-- <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li> -->
+              <li class="navbar__menu__item" data-link="#contact">Contact</li>
+            </ul>
+        <!-- Toggle button -->
+        <button class="navbar__toggle-btn">
+          <i class="fa fa-bars"></i>
+        </button>
+        </div>
       </div>
-
-      <ul class="navbar__menu">
-        <li class="navbar__menu__item active" data-link="#home">Home</li>
-        <li class="navbar__menu__item" data-link="#about">About</li>
-        <li class="navbar__menu__item" data-link="#skills">Skills</li>
-        <li class="navbar__menu__item" data-link="#work">My work</li>
-        <!-- <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li> -->
-        <li class="navbar__menu__item" data-link="#contact">Contact</li>
-      </ul>
-
-      <!-- Toggle button -->
-      <button class="navbar__toggle-btn">
-        <i class="fa fa-bars"></i>
-      </button>
-    </nav>
+    </header>
 
     <!-- Home -->
     <section id="home">
