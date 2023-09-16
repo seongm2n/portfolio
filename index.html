@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ㅅㅅㅁ's Portfolio</title>
+    <title>신성민 포트폴리오</title>
     <meta name="description" content="Portfolio for world-renowned software engineer ㅅㅅㅁ">
     <meta name="author" content="ㅅㅅㅁ">
     <link rel="icon" type="image/png" href="imgs/favicon2.png">
@@ -24,19 +24,18 @@
           <div class="navbar__logo">
             <img class="navbar__logo__img "src="imgs/favicon2.png" alt="ㅅㅅㅁ's nav logo"/>
             <h1 class="navbar__logo__title"><a href="#">성민</a></h1>
+            <!-- Toggle button -->
+            <button class="navbar__toggle-btn">
+              <i class="fa fa-bars"></i>
+            </button>
           </div>
             <ul class="navbar__menu">
               <li class="navbar__menu__item active" data-link="#home">Home</li>
               <li class="navbar__menu__item" data-link="#about">About</li>
               <li class="navbar__menu__item" data-link="#skills">Skills</li>
               <li class="navbar__menu__item" data-link="#work">My work</li>
-              <!-- <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li> -->
               <li class="navbar__menu__item" data-link="#contact">Contact</li>
             </ul>
-        <!-- Toggle button -->
-        <button class="navbar__toggle-btn">
-          <i class="fa fa-bars"></i>
-        </button>
         </div>
       </div>
     </header>
@@ -49,8 +48,9 @@
         alt="ㅅㅅㅁ's profile photo" 
         class="home__avatar"
         />
-        <h1 class="home__title">안녕하세요 <br/> 저는 신성민 입니다.</h1>
-        <h2 class="home__description">배우는것을 두려워하지 않는 프론트엔드 개발자</h2>
+        <h1 class="home__title">안녕하세요</h1>
+        <h2 class="home__description">다양한 분야에 도전하는 UI/UX 중심의 개발자 </h2>
+        <h1 class="home__title"> 신성민 입니다.</h1>
         <button class="home__contact" data-link="#contact">Contact Me</button>
       </div>
     </section>
@@ -59,61 +59,82 @@
     <section id="about" class="section section__container">
       <h1>About me</h1>
       <p>
-        새로운 것을 배우는데 두려움이 없고 어떤 환경이 와도 적응을 잘할 자신 있습니다.</br></br>
-        끊임없이 도전하는 끈기가 있습니다.</br></br>
-        몇번을 넘어져도 처음 넘어진 것 처럼 앞으로의 저는 힘든 일이나 과제가 주어져도 몇번이고  다시 도전하여 해낼 수 있는 자신이 있습니다.</br></br>
-        일이 주어지면 혼자서 해야 하는 것은 어떻게 해서든 해냅니다.</br></br>
-        시간을 잘 지키고 어떠한 스트레스가 있어도 충분히 잘 적응합니다. 
+        환경조경학과와 유통물류학과에서의 경험은 프론트엔드 개발자로서 사용자 중심으로 생각하고 디자인하며, <br/>
+        사용자와의 상호작용을 고려하며 문제를 해결하고 소통하는 능력을 향상시키는 데 도움이 되었습니다. <br/>
+        저는 사용자의 입장에서 생각하고 웹 애플리케이션을 개발하는 유연한 개발자가 되고자 합니다.
       </p>
       <div class="about__majors">
         <div class="major">
           <div class="major__icon">
-            <i class="fa-brands fa-html5"></i>
+            <img src="imgs/frontend.gif" alt="">
           </div>
           <h2 class="major__title">Front-end</h2>
           <div class="major__description">
-            HTML, CSS, JavaScript,React<br/> Web APIs
+            HTML, CSS, JavaScript, TypeScript, ReactJS
           </div>
         </div>
       </div>
-      <div class="about__school">
-        <div class="school">
-          <img src="imgs/schools/cj-logo.png" alt="University" class="school__logo">
-          <div class="school__description">
-            <p class="school__name">청주대학교(환경조경학과)</p>
-            <p class="school__period">
-              2016년 3월 입학 - 2018년 2월수료 및 자퇴</p>
+      <div class="aboutEntry">
+        <div class="about__school">
+          <h2>학력</h2>
+          <div class="school">
+            <img src="imgs/abouts/schools/cj-logo.png" alt="University" class="school__logo">
+            <div class="school__description">
+              <p class="school__name">청주대학교(환경조경학과)</p>
+              <p class="school__period">
+                2016년 3월 입학 - 2018년 2월수료 및 자퇴</p>
+            </div>
+          </div>
+          <div class="school">
+            <img src="imgs/abouts/schools/sk-logo.png" alt="University" class="school__logo">
+            <div class="school__description">
+              <p class="school__name">성결대학교(유통물류학과/컴퓨터공학과)</p>
+              <p class="school__period">
+                2019년 3월 편입 - 2021년 8월 졸업</p>
+            </div>
           </div>
         </div>
-        <div class="school">
-          <img src="imgs/schools/sk-logo.png" alt="University" class="school__logo">
-          <div class="school__description">
-            <p class="school__name">성결대학교(유통물류학과/컴퓨터공학과)</p>
-            <p class="school__period">
-              2019년 3월 편입 - 2021년 8월 졸업</p>
+  
+        <div class="about__certificate">
+          <h2>자격증</h1>
+          <div class="certificate">
+            <img src="imgs/abouts/certificate/certificate-logo.png" alt="certificate" class="certificate__logo">
+            <div class="certificate__description">
+              <p class="certificate__name">정보처리기사</p>
+              <p class="certificate__period">
+                필기합격 2021년 03월 19일 / 최종합격 2022년 09년 02일</p>
+            </div>
           </div>
+          
         </div>
+        <div class="about__activity">
+          <h2>교육 및 활동</h1>
+          <div class="activity">
+            <img src="imgs/abouts/activity/nomad.png" alt="activity" class="activity__logo" >
+            <div class="activity__description">
+              <p class="activity__name">노마드코더 챌린지</p>
+              <p class="activity__period">
+                2022년 12월 26일 - 2023년 01월 09일</p>
+            </div>
+          </div>
+          <div class="activity">
+            <img src="imgs/abouts/activity/elice.png" alt="activity" class="activity__logo" >
+            <div class="activity__description">
+              <p class="activity__name">엘리스 트랙 SW4기</p>
+              <p class="activity__period">
+                2023년 02월 28일 - 2023년 06월 16일</p>
+            </div>
+          </div>
+          <div class="activity">
+            <img src="imgs/abouts/activity/preonboardinginternship.png" alt="activity" class="activity__logo" >
+            <div class="activity__description">
+              <p class="activity__name">원티드 프리온보딩 인턴십 12차</p>
+              <p class="activity__period">
+                2023년 08월 22일 - 2023년 09월 29일</p>
+            </div>
+          </div>
       </div>
-
-      <div class="about__certificate">
-        <div class="certificate">
-          <img src="imgs/certificate-logo.png" alt="certificate" class="certificate__logo">
-          <div class="certificate__description">
-            <p class="certificate__name">정보처리기사</p>
-            <p class="certificate__period">
-              필기합격 2021년 03월 19일 / 최종합격 2022년 09년 02일</p>
-          </div>
-        </div>
-      </div>
-      <div class="about__certificate">
-        <div class="certificate">
-          <img src="imgs/cos2급.png" alt="certificate" class="certificate__logo" href="file/자격증/CoS2.pdf">
-          <div class="certificate__description">
-            <p class="certificate__name">Coding Specialist 2급</p>
-            <p class="certificate__period">
-              합격일자 2019년 06월 08일</p>
-          </div>
-        </div>
+      
       </div>
     </section>
 
